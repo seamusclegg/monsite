@@ -75,7 +75,7 @@ while ($result_request = mysql_fetch_array($request)) {
 }
 
 $smarty->assign('tableauArticleSmarty', $tableauArticleSmarty);
-$smarty->debugging = true;
+$smarty->debugging = false;
 $smarty->display('index.tpl');
 include_once 'include/menu.inc.php';
 //insertion du menu HTML de la page

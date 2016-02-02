@@ -36,7 +36,7 @@ if (isset($_POST['inscription']))	{
 }
 }
 
-$smarty->debugging = true;
+$smarty->debugging = false;
 $smarty->assign('bad_inscription', $_SESSION['bad_connexion']);
 $smarty->display('templates/inscription.tpl');
 

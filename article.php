@@ -57,7 +57,7 @@ if (isset($_POST['envoyer'])) {
     if (isset($_SESSION['msg_error'])) {
         $smarty->assign('msg_error', $_SESSION['msg_error']);
     }
-    $smarty->debugging = true;
+    $smarty->debugging = false;
     
     $smarty->display('article.tpl'); 
    
